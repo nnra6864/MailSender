@@ -1,9 +1,11 @@
 # MailSender
+<pre>
 Mail password can be obtained by enabling a 2 Step Verification on your google account that you can find by navigating to:
 Google Account -> Security -> 2 Step Verification
 and then adding a new App Password(below 2SV)
 
 You can select a text file with all the Senders by clicking the Select Senders button.
+
 Senders text file should be written in a following format:
 
 mail1@gmail.com password
@@ -55,3 +57,4 @@ Start starts the sending process.
 Reset resets the Sent and Failed label values.
 
 DISCLAIMER: THIS PROJECT IS FOR ACADEMIC PURPOSES ONLY. I TAKE NO RESPONSIBILITY FOR ILLEGAL USAGE AND/OR POTENTIAL HARMS.
+</pre>
