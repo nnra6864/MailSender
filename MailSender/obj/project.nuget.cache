@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PPvqJUf8ITGZ48TO2TQTAHhNTcG6TPAlJMuAJR1xAf4euxX6/9P1XgLkpUoBUo6ZM+GV+gCQF6KBpd1eChpctA==",
+  "dgSpecHash": "VntJlh2ol5tRa8g/QmpvriSQqPzsiw13ahDRivL1WKio7qQNVwrtR7N1JRQuIVAcHHaDCTe9zYPYRJzlcYkJDA==",
   "success": true,
-  "projectFilePath": "D:\\Work\\Programming\\C#\\Learning\\WPF\\Mail Spammer\\Project\\MailSpammer\\MailSender.csproj",
+  "projectFilePath": "D:\\Work\\Programming\\C#\\Learning\\WPF\\Mail Spammer\\Project\\MailSender\\MailSender.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\matej\\.nuget\\packages\\materialdesigncolors\\2.0.9\\materialdesigncolors.2.0.9.nupkg.sha512",
     "C:\\Users\\matej\\.nuget\\packages\\materialdesignthemes\\4.6.1\\materialdesignthemes.4.6.1.nupkg.sha512"

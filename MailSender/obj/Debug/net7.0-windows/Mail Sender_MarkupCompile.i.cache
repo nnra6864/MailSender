@@ -4,12 +4,12 @@
 winexe
 C#
 .cs
-D:\Work\Programming\C#\Learning\WPF\Mail Spammer\Project\MailSpammer\obj\Debug\net7.0-windows\
+D:\Work\Programming\C#\Learning\WPF\Mail Spammer\Project\MailSender\obj\Debug\net7.0-windows\
 MailSender
 none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
-D:\Work\Programming\C#\Learning\WPF\Mail Spammer\Project\MailSpammer\App.xaml
+D:\Work\Programming\C#\Learning\WPF\Mail Spammer\Project\MailSender\App.xaml
 11407045341
 1-389697275
 5-364572500

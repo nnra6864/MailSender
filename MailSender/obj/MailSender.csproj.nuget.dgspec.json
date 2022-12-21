@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Work\\Programming\\C#\\Learning\\WPF\\Mail Spammer\\Project\\MailSpammer\\MailSender.csproj": {}
+    "D:\\Work\\Programming\\C#\\Learning\\WPF\\Mail Spammer\\Project\\MailSender\\MailSender.csproj": {}
   },
   "projects": {
-    "D:\\Work\\Programming\\C#\\Learning\\WPF\\Mail Spammer\\Project\\MailSpammer\\MailSender.csproj": {
+    "D:\\Work\\Programming\\C#\\Learning\\WPF\\Mail Spammer\\Project\\MailSender\\MailSender.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Work\\Programming\\C#\\Learning\\WPF\\Mail Spammer\\Project\\MailSpammer\\MailSender.csproj",
+        "projectUniqueName": "D:\\Work\\Programming\\C#\\Learning\\WPF\\Mail Spammer\\Project\\MailSender\\MailSender.csproj",
         "projectName": "Mail Sender",
-        "projectPath": "D:\\Work\\Programming\\C#\\Learning\\WPF\\Mail Spammer\\Project\\MailSpammer\\MailSender.csproj",
+        "projectPath": "D:\\Work\\Programming\\C#\\Learning\\WPF\\Mail Spammer\\Project\\MailSender\\MailSender.csproj",
         "packagesPath": "C:\\Users\\matej\\.nuget\\packages\\",
-        "outputPath": "D:\\Work\\Programming\\C#\\Learning\\WPF\\Mail Spammer\\Project\\MailSpammer\\obj\\",
+        "outputPath": "D:\\Work\\Programming\\C#\\Learning\\WPF\\Mail Spammer\\Project\\MailSender\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
