@@ -1,0 +1,458 @@
+﻿<Window x:Class="MailSender.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MailSender"
+        mc:Ignorable="d"
+        Title="Mail Sender"
+        Height="800" Width="1300"
+        FontFamily="Cascadia Mono Light"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="#00FFFFFF"
+        ResizeMode="NoResize"
+        Icon="/Images/Mail.png" WindowStartupLocation="CenterScreen">
+    <Border BorderThickness="2" CornerRadius="8" MouseLeftButtonDown="Border_MouseLeftButtonDown">
+        <Border.BorderBrush>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#E5434C5E"/>
+                <GradientStop Color="#E53B4252" Offset="1"/>
+            </LinearGradientBrush>
+        </Border.BorderBrush>
+        <Border.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#F22E3440" Offset="1"/>
+                <GradientStop Color="#F2434C5E" Offset="0"/>
+            </LinearGradientBrush>
+        </Border.Background>
+        <Grid Width="1300" Height="800">
+            <TextBox x:Name="tbSubject"
+                     x:FieldModifier="public"
+                     HorizontalAlignment="Center"
+                     TextWrapping="Wrap"
+                     Text="{Binding Path=Subject, Mode=TwoWay, NotifyOnSourceUpdated=True, NotifyOnTargetUpdated=True}"
+                     VerticalAlignment="Top"
+                     Width="550" Height="50"
+                     FontSize="20"
+                     MaxLines="1"
+                     Margin="650,50,0,0"
+                     Padding="1,1,1,1"
+                     VerticalContentAlignment="Center"
+                     Foreground="#FF88C0D0"
+                     SelectionBrush="#7FD8DEE9"
+                     SelectionTextBrush="#FF8FBCBB"
+                     TabIndex="2" ToolTip="Subject of the mail." >
+                <TextBox.CaretBrush>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF5E81AC"/>
+                        <GradientStop Color="#FF8FBCBB" Offset="1"/>
+                    </LinearGradientBrush>
+                </TextBox.CaretBrush>
+                <TextBox.BorderBrush>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#7F5E81AC"/>
+                        <GradientStop Color="#7F88C0D0" Offset="1"/>
+                    </LinearGradientBrush>
+                </TextBox.BorderBrush>
+                <TextBox.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#7F4C566A" Offset="1"/>
+                        <GradientStop Color="#7F2E3440" Offset="0"/>
+                    </LinearGradientBrush>
+                </TextBox.Background>
+            </TextBox>
+            <Button x:Name="btnStart" Content="Start" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="250" Margin="350,0,0,38" Height="50" Click="btnStart_Click" Foreground="#FF88C0D0" TabIndex="7" Cursor="Hand" BorderThickness="3,3,3,3" FontSize="20" ToolTip="Starts the sending process">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#7F4C566A"/>
+                        <GradientStop Color="#7F2E3440" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+                <Button.BorderBrush>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#7F88C0D0"/>
+                        <GradientStop Color="#7F5E81AC" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.BorderBrush>
+            </Button>
+            <TextBox x:Name="tbBody"
+                     x:FieldModifier="public"
+                     HorizontalAlignment="Center"
+                     TextWrapping="Wrap"
+                     Text="{Binding Path=Body, Mode=TwoWay, NotifyOnSourceUpdated=True, NotifyOnTargetUpdated=True}"
+                     VerticalAlignment="Center"
+                     Width="550" Height="400"
+                     AcceptsReturn="True"
+                     Margin="650,0,0,100"
+                     FontSize="16"
+                     Foreground="#FF88C0D0"
+                     SelectionBrush="#7FD8DEE9"
+                     SelectionTextBrush="#FF8FBCBB"
+                     TabIndex="3" ToolTip="Body of the mail.">
+                <TextBox.CaretBrush>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF5E81AC" Offset="0"/>
+                        <GradientStop Color="#FF8FBCBB" Offset="1"/>
+                    </LinearGradientBrush>
+                </TextBox.CaretBrush>
+                <TextBox.BorderBrush>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#7F88C0D0"/>
+                        <GradientStop Color="#7F5E81AC" Offset="1"/>
+                    </LinearGradientBrush>
+                </TextBox.BorderBrush>
+                <TextBox.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#7F2E3440" Offset="1"/>
+                        <GradientStop Color="#7F4C566A" Offset="0"/>
+                    </LinearGradientBrush>
+                </TextBox.Background>
+            </TextBox>
+            <ListBox x:Name="lbFrom"
+                     d:ItemsSource="{d:SampleData ItemCount=0}"
+                     VerticalAlignment="Center"
+                     HorizontalAlignment="Left"
+                     Width="250" Height="400"
+                     Margin="50,0,0,100"
+                     FontSize="16"
+                     Foreground="#FF88C0D0"
+                     TabIndex="11"
+                     IsTabStop="True"
+                     Cursor="IBeam" Focusable="False"
+                     ToolTip="List of mails that will send messages">
+                <ListBox.BorderBrush>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#7F88C0D0"/>
+                        <GradientStop Color="#7F5E81AC" Offset="1"/>
+                    </LinearGradientBrush>
+                </ListBox.BorderBrush>
+                <ListBox.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#7F4C566A"/>
+                        <GradientStop Color="#7F2E3440" Offset="1"/>
+                    </LinearGradientBrush>
+                </ListBox.Background>
+            </ListBox>
+            <Button x:Name="btnFrom"
+                    Content="Select Senders"
+                    HorizontalAlignment="Left"
+                    Margin="50,50,0,0"
+                    VerticalAlignment="Top"
+                    Width="250" Height="50"
+                    FontSize="20"
+                    Click="btnFrom_Click"
+                    Foreground="#FF88C0D0"
+                    TabIndex="0"
+                    Cursor="Hand"
+                    BorderThickness="3,3,3,3"
+                    ToolTip="List of mails that will send messages&#x0a;Use the following format:&#x0a;mail@gmail.com password&#x0a;Password can be obtained by enabling 2FA and going to:&#x0a;Google Account -> Security -> App Passwords&#x0a;And generating one">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#7F2E3440"/>
+                        <GradientStop Color="#7F4C566A" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+                <Button.BorderBrush>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#7F5E81AC"/>
+                        <GradientStop Color="#7F88C0D0" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.BorderBrush>
+            </Button>
+            <ListBox x:Name="lbTo"
+                     d:ItemsSource="{d:SampleData ItemCount=0}"
+                     VerticalAlignment="Center"
+                     HorizontalAlignment="Center"
+                     Width="250" Height="400"
+                     Margin="0,0,300,100"
+                     FontSize="16"
+                     Foreground="#FF88C0D0"
+                     TabIndex="12"
+                     IsTabStop="True"
+                     Cursor="IBeam"
+                     Focusable="False"
+                     ToolTip="List of mails that will receive messages">
+                <ListBox.BorderBrush>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#7F5E81AC"/>
+                        <GradientStop Color="#7F88C0D0" Offset="1"/>
+                    </LinearGradientBrush>
+                </ListBox.BorderBrush>
+                <ListBox.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#7F2E3440"/>
+                        <GradientStop Color="#7F4C566A" Offset="1"/>
+                    </LinearGradientBrush>
+                </ListBox.Background>
+            </ListBox>
+            <Button x:Name="btnTo" Content="Select Receivers" HorizontalAlignment="Center" Margin="0,50,300,0" VerticalAlignment="Top" Width="250" Height="50" FontSize="20" Click="btnTo_Click" Foreground="#FF88C0D0" TabIndex="1" Cursor="Hand" BorderThickness="3,3,3,3" 
+                    ToolTip="List of mails that will receive messages&#x0a;Use the following format:&#x0a;mail@gmail.com">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#7F4C566A"/>
+                        <GradientStop Color="#7F2E3440" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+                <Button.BorderBrush>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#7F88C0D0"/>
+                        <GradientStop Color="#7F5E81AC" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.BorderBrush>
+            </Button>
+            <TextBox x:Name="tbRepeat"
+                     x:FieldModifier="public"
+                     HorizontalAlignment="Left"
+                     TextWrapping="Wrap"
+                     Text="{Binding Path=Repeat, Mode=TwoWay, NotifyOnSourceUpdated=True, NotifyOnTargetUpdated=True}"
+                     VerticalAlignment="Bottom"
+                     Width="250" Height="50"
+                     FontSize="20"
+                     MaxLines="1"
+                     AcceptsTab="False"
+                     Margin="50,0,0,125"
+                     Padding="1,1,1,1"
+                     VerticalContentAlignment="Center"
+                     HorizontalContentAlignment="Center"
+                     Foreground="#FF88C0D0"
+                     SelectionBrush="#7FD8DEE9"
+                     SelectionTextBrush="#FF8FBCBB"
+                     TabIndex="4"
+                     ToolTip="Number of messages sent to each receiver from each sender&#x0a;I would advise you against using anything above 25">
+                <TextBox.CaretBrush>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF5E81AC"/>
+                        <GradientStop Color="#FF8FBCBB" Offset="1"/>
+                    </LinearGradientBrush>
+                </TextBox.CaretBrush>
+                <TextBox.BorderBrush>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#7F5E81AC"/>
+                        <GradientStop Color="#7F88C0D0" Offset="1"/>
+                    </LinearGradientBrush>
+                </TextBox.BorderBrush>
+                <TextBox.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#7F4C566A" Offset="1"/>
+                        <GradientStop Color="#7F2E3440" Offset="0"/>
+                    </LinearGradientBrush>
+                </TextBox.Background>
+            </TextBox>
+            <Button x:Name="btnExit" Content="Button" HorizontalAlignment="Right" VerticalAlignment="Top" Width="50" Height="50" Padding="0,0,0,0" Click="btnExit_Click" BorderBrush="{x:Null}" Foreground="{x:Null}" TabIndex="10" ToolTip="Exit">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Images/Exit Button Outlines 100x100.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btnMinimize" Content="Button" HorizontalAlignment="Right" VerticalAlignment="Top" Width="50" Height="50" Margin="0,0,50,0" BorderBrush="{x:Null}" BorderThickness="0,0,0,0" Padding="0,0,0,0" Click="btnMinimize_Click" Foreground="{x:Null}" TabIndex="9" ToolTip="Minimize">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Images/Minimize Button Outline 100x100.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btnReset" Content="Reset" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="250" Margin="0,0,50,38" Height="50" Foreground="#FF88C0D0" TabIndex="8" Cursor="Hand" BorderThickness="3,3,3,3" FontSize="20" Click="btnReset_Click" ToolTip="Resets the Sent and Failed values">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#7F4C566A"/>
+                        <GradientStop Color="#7F2E3440" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+                <Button.BorderBrush>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#7F88C0D0"/>
+                        <GradientStop Color="#7F5E81AC" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.BorderBrush>
+            </Button>
+            <CheckBox x:Name="cbInterval"
+                      Content="Use Interval"
+                      HorizontalAlignment="Center"
+                      VerticalAlignment="Bottom"
+                      FontSize="10"
+                      Width="100" Height="12"
+                      Margin="0,0,350,50"
+                      Background="#7F5E81AC"
+                      HorizontalContentAlignment="Center"
+                      Foreground="#FF88C0D0"
+                      BorderBrush="#7F88C0D0"
+                      IsChecked="{Binding Path=UseInterval, Mode=TwoWay, NotifyOnSourceUpdated=True, NotifyOnTargetUpdated=True}"
+                      RenderTransformOrigin="0.5,0.5"
+                      VerticalContentAlignment="Center"
+                      TabIndex="6"
+                      ToolTip="Determines if sending mails will be repeated with a given interval">
+                <CheckBox.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="2" ScaleX="2"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </CheckBox.RenderTransform>
+            </CheckBox>
+            <Label x:Name="lblRepeat"
+                   Content="Repeat:"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Bottom"
+                   FontSize="20"
+                   Width="250" Height="25"
+                   Margin="50,0,0,175"
+                   VerticalContentAlignment="Center"
+                   HorizontalContentAlignment="Center"
+                   Padding="0,0,0,0"
+                   Foreground="#FF88C0D0"
+                   Background="{x:Null}"
+                   ToolTip="Number of messages sent to each receiver from each sender&#x0a;I would advise you against using anything above 25"/>
+            <Label x:Name="lblSent" Content="{Binding Path=Sent, Mode=OneWay, NotifyOnSourceUpdated=True, NotifyOnTargetUpdated=True}"
+                   HorizontalAlignment="Center"
+                   Margin="350,0,0,10"
+                   VerticalAlignment="Bottom"
+                   Height="25" Width="250"
+                   FontSize="16"
+                   Padding="0,3,0,3" Foreground="#FF88C0D0" TabIndex="13" ToolTip="Number of successfuly sent messages."/>
+            <Label x:Name="lblNotSent" Content="{Binding NotSent, Mode=OneWay, NotifyOnSourceUpdated=True, NotifyOnTargetUpdated=True}"
+                HorizontalAlignment="Right"
+                Margin="0,0,50,10"
+                VerticalAlignment="Bottom"
+                Height="25" Width="250"
+                FontSize="16"
+                Padding="0,3,0,3" Foreground="#FF88C0D0" TabIndex="14" ToolTip="Number of messages that failed to send."/>
+            <CheckBox x:Name="cbIsHTML"
+                Content="Is HTML"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Bottom"
+                FontSize="10"
+                Width="100" Height="12"
+                Margin="100,0,0,50"
+                Background="#7F5E81AC"
+                Foreground="#FF88C0D0"
+                BorderBrush="#7F88C0D0"
+                IsChecked="{Binding IsHTML, Mode=TwoWay, NotifyOnSourceUpdated=True, NotifyOnTargetUpdated=True}"
+                RenderTransformOrigin="0.5,0.5"
+                VerticalContentAlignment="Center"
+                TabIndex="6"
+                ToolTip="Determines if Body of the mail is written in HTML">
+                <CheckBox.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="2" ScaleX="2"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </CheckBox.RenderTransform>
+            </CheckBox>
+            <TextBox x:Name="tbInterval"
+                x:FieldModifier="public"
+                HorizontalAlignment="Center"
+                TextWrapping="Wrap"
+                Text="{Binding Interval, Mode=TwoWay, NotifyOnSourceUpdated=True, NotifyOnTargetUpdated=True}"
+                VerticalAlignment="Bottom"
+                Width="250" Height="50"
+                FontSize="20"
+                MaxLines="1"
+                Margin="0,0,300,125"
+                Padding="1,1,1,1"
+                VerticalContentAlignment="Center"
+                HorizontalContentAlignment="Center"
+                Foreground="#FF88C0D0"
+                SelectionBrush="#7FD8DEE9"
+                SelectionTextBrush="#FF8FBCBB"
+                TabIndex="5"
+                ToolTip="Number of messages sent to each receiver from each sender&#xA;I would advise you against using anything above 25">
+                <TextBox.CaretBrush>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF5E81AC"/>
+                        <GradientStop Color="#FF8FBCBB" Offset="1"/>
+                    </LinearGradientBrush>
+                </TextBox.CaretBrush>
+                <TextBox.BorderBrush>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#7F5E81AC" Offset="1"/>
+                        <GradientStop Color="#7F88C0D0" Offset="0"/>
+                    </LinearGradientBrush>
+                </TextBox.BorderBrush>
+                <TextBox.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#7F4C566A" Offset="0"/>
+                        <GradientStop Color="#7F2E3440" Offset="1"/>
+                    </LinearGradientBrush>
+                </TextBox.Background>
+            </TextBox>
+            <Label x:Name="lblInterval"
+                Content="Interval:"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Bottom"
+                FontSize="20"
+                Width="250" Height="25"
+                Margin="0,0,300,175"
+                VerticalContentAlignment="Center"
+                HorizontalContentAlignment="Center"
+                Padding="0,0,0,0"
+                Foreground="#FF88C0D0"
+                Background="{x:Null}"
+                ToolTip="Time that passes before sending messages again&#xA;Input should be in seconds"/>
+            <Button x:Name="btnLoadBody" Content="Load Body" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="250" Margin="950,0,0,125" Height="50" Foreground="#FF88C0D0" TabIndex="7" Cursor="Hand" BorderThickness="3,3,3,3" FontSize="20" ToolTip="Loads the body from a text file" Click="btnLoadBody_Click">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#7F4C566A" Offset="1"/>
+                        <GradientStop Color="#7F2E3440" Offset="0"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+                <Button.BorderBrush>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#7F88C0D0" Offset="1"/>
+                        <GradientStop Color="#7F5E81AC" Offset="0"/>
+                    </LinearGradientBrush>
+                </Button.BorderBrush>
+            </Button>
+            <TextBox x:Name="tbPause"
+                x:FieldModifier="public"
+                HorizontalAlignment="Center"
+                TextWrapping="Wrap"
+                Text="{Binding Pause, Mode=TwoWay, NotifyOnSourceUpdated=True, NotifyOnTargetUpdated=True}"
+                VerticalAlignment="Bottom"
+                Width="250" Height="50"
+                FontSize="20"
+                MaxLines="1"
+                Margin="350,0,0,125"
+                Padding="1,1,1,1"
+                VerticalContentAlignment="Center"
+                HorizontalContentAlignment="Center"
+                Foreground="#FF88C0D0"
+                SelectionBrush="#7FD8DEE9"
+                SelectionTextBrush="#FF8FBCBB"
+                TabIndex="5"
+                ToolTip="In case sending the mail fails, program will wait for Pause amount of seconds before trying again&#xA;My recommendation is at least 90 seconds">
+                <TextBox.CaretBrush>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF5E81AC"/>
+                        <GradientStop Color="#FF8FBCBB" Offset="1"/>
+                    </LinearGradientBrush>
+                </TextBox.CaretBrush>
+                <TextBox.BorderBrush>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#7F5E81AC" Offset="0"/>
+                        <GradientStop Color="#7F88C0D0" Offset="1"/>
+                    </LinearGradientBrush>
+                </TextBox.BorderBrush>
+                <TextBox.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#7F4C566A" Offset="1"/>
+                        <GradientStop Color="#7F2E3440" Offset="0"/>
+                    </LinearGradientBrush>
+                </TextBox.Background>
+            </TextBox>
+            <Label x:Name="lblPause"
+                Content="Pause:"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Bottom"
+                FontSize="20"
+                Width="250" Height="25"
+                Margin="350,0,0,175"
+                VerticalContentAlignment="Center"
+                HorizontalContentAlignment="Center"
+                Padding="0,0,0,0"
+                Foreground="#FF88C0D0"
+                Background="{x:Null}"
+                ToolTip="In case sending the mail fails, program will wait for Pause amount of seconds before trying again&#xA;My recommendation is at least 60 seconds"/>
+        </Grid>
+    </Border>
+</Window>

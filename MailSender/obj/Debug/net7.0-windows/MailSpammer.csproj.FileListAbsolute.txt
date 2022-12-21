@@ -1,0 +1,49 @@
+D:\Work\Programming\C#\Learning\WPF\MailSpammer\bin\Debug\net7.0-windows\MailSpammer.exe
+D:\Work\Programming\C#\Learning\WPF\MailSpammer\bin\Debug\net7.0-windows\MailSpammer.deps.json
+D:\Work\Programming\C#\Learning\WPF\MailSpammer\bin\Debug\net7.0-windows\MailSpammer.runtimeconfig.json
+D:\Work\Programming\C#\Learning\WPF\MailSpammer\bin\Debug\net7.0-windows\MailSpammer.dll
+D:\Work\Programming\C#\Learning\WPF\MailSpammer\bin\Debug\net7.0-windows\MailSpammer.pdb
+D:\Work\Programming\C#\Learning\WPF\MailSpammer\bin\Debug\net7.0-windows\MaterialDesignColors.dll
+D:\Work\Programming\C#\Learning\WPF\MailSpammer\bin\Debug\net7.0-windows\MaterialDesignThemes.Wpf.dll
+D:\Work\Programming\C#\Learning\WPF\MailSpammer\obj\Debug\net7.0-windows\MailSpammer.csproj.AssemblyReference.cache
+D:\Work\Programming\C#\Learning\WPF\MailSpammer\obj\Debug\net7.0-windows\MainWindow.g.cs
+D:\Work\Programming\C#\Learning\WPF\MailSpammer\obj\Debug\net7.0-windows\App.g.cs
+D:\Work\Programming\C#\Learning\WPF\MailSpammer\obj\Debug\net7.0-windows\MailSpammer_MarkupCompile.cache
+D:\Work\Programming\C#\Learning\WPF\MailSpammer\obj\Debug\net7.0-windows\MailSpammer_MarkupCompile.lref
+D:\Work\Programming\C#\Learning\WPF\MailSpammer\obj\Debug\net7.0-windows\MainWindow.baml
+D:\Work\Programming\C#\Learning\WPF\MailSpammer\obj\Debug\net7.0-windows\MailSpammer.g.resources
+D:\Work\Programming\C#\Learning\WPF\MailSpammer\obj\Debug\net7.0-windows\MailSpammer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Work\Programming\C#\Learning\WPF\MailSpammer\obj\Debug\net7.0-windows\MailSpammer.AssemblyInfoInputs.cache
+D:\Work\Programming\C#\Learning\WPF\MailSpammer\obj\Debug\net7.0-windows\MailSpammer.AssemblyInfo.cs
+D:\Work\Programming\C#\Learning\WPF\MailSpammer\obj\Debug\net7.0-windows\MailSpammer.csproj.CoreCompileInputs.cache
+D:\Work\Programming\C#\Learning\WPF\MailSpammer\obj\Debug\net7.0-windows\MailSpammer.csproj.CopyComplete
+D:\Work\Programming\C#\Learning\WPF\MailSpammer\obj\Debug\net7.0-windows\MailSpammer.dll
+D:\Work\Programming\C#\Learning\WPF\MailSpammer\obj\Debug\net7.0-windows\refint\MailSpammer.dll
+D:\Work\Programming\C#\Learning\WPF\MailSpammer\obj\Debug\net7.0-windows\MailSpammer.pdb
+D:\Work\Programming\C#\Learning\WPF\MailSpammer\obj\Debug\net7.0-windows\MailSpammer.genruntimeconfig.cache
+D:\Work\Programming\C#\Learning\WPF\MailSpammer\obj\Debug\net7.0-windows\ref\MailSpammer.dll
+D:\Work\Programming\C#\Learning\WPF\Mail Spammer\Project\MailSpammer\bin\Debug\net7.0-windows\Mail Spammer.exe
+D:\Work\Programming\C#\Learning\WPF\Mail Spammer\Project\MailSpammer\bin\Debug\net7.0-windows\Mail Spammer.deps.json
+D:\Work\Programming\C#\Learning\WPF\Mail Spammer\Project\MailSpammer\bin\Debug\net7.0-windows\Mail Spammer.runtimeconfig.json
+D:\Work\Programming\C#\Learning\WPF\Mail Spammer\Project\MailSpammer\bin\Debug\net7.0-windows\Mail Spammer.dll
+D:\Work\Programming\C#\Learning\WPF\Mail Spammer\Project\MailSpammer\bin\Debug\net7.0-windows\Mail Spammer.pdb
+D:\Work\Programming\C#\Learning\WPF\Mail Spammer\Project\MailSpammer\bin\Debug\net7.0-windows\MaterialDesignColors.dll
+D:\Work\Programming\C#\Learning\WPF\Mail Spammer\Project\MailSpammer\bin\Debug\net7.0-windows\MaterialDesignThemes.Wpf.dll
+D:\Work\Programming\C#\Learning\WPF\Mail Spammer\Project\MailSpammer\obj\Debug\net7.0-windows\MailSpammer.csproj.AssemblyReference.cache
+D:\Work\Programming\C#\Learning\WPF\Mail Spammer\Project\MailSpammer\obj\Debug\net7.0-windows\MainWindow.g.cs
+D:\Work\Programming\C#\Learning\WPF\Mail Spammer\Project\MailSpammer\obj\Debug\net7.0-windows\App.g.cs
+D:\Work\Programming\C#\Learning\WPF\Mail Spammer\Project\MailSpammer\obj\Debug\net7.0-windows\Mail Spammer_Content.g.cs
+D:\Work\Programming\C#\Learning\WPF\Mail Spammer\Project\MailSpammer\obj\Debug\net7.0-windows\Mail Spammer_MarkupCompile.cache
+D:\Work\Programming\C#\Learning\WPF\Mail Spammer\Project\MailSpammer\obj\Debug\net7.0-windows\Mail Spammer_MarkupCompile.lref
+D:\Work\Programming\C#\Learning\WPF\Mail Spammer\Project\MailSpammer\obj\Debug\net7.0-windows\MainWindow.baml
+D:\Work\Programming\C#\Learning\WPF\Mail Spammer\Project\MailSpammer\obj\Debug\net7.0-windows\Mail Spammer.g.resources
+D:\Work\Programming\C#\Learning\WPF\Mail Spammer\Project\MailSpammer\obj\Debug\net7.0-windows\MailSpammer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Work\Programming\C#\Learning\WPF\Mail Spammer\Project\MailSpammer\obj\Debug\net7.0-windows\MailSpammer.AssemblyInfoInputs.cache
+D:\Work\Programming\C#\Learning\WPF\Mail Spammer\Project\MailSpammer\obj\Debug\net7.0-windows\MailSpammer.AssemblyInfo.cs
+D:\Work\Programming\C#\Learning\WPF\Mail Spammer\Project\MailSpammer\obj\Debug\net7.0-windows\MailSpammer.csproj.CoreCompileInputs.cache
+D:\Work\Programming\C#\Learning\WPF\Mail Spammer\Project\MailSpammer\obj\Debug\net7.0-windows\MailSpammer.csproj.CopyComplete
+D:\Work\Programming\C#\Learning\WPF\Mail Spammer\Project\MailSpammer\obj\Debug\net7.0-windows\Mail Spammer.dll
+D:\Work\Programming\C#\Learning\WPF\Mail Spammer\Project\MailSpammer\obj\Debug\net7.0-windows\refint\Mail Spammer.dll
+D:\Work\Programming\C#\Learning\WPF\Mail Spammer\Project\MailSpammer\obj\Debug\net7.0-windows\Mail Spammer.pdb
+D:\Work\Programming\C#\Learning\WPF\Mail Spammer\Project\MailSpammer\obj\Debug\net7.0-windows\MailSpammer.genruntimeconfig.cache
+D:\Work\Programming\C#\Learning\WPF\Mail Spammer\Project\MailSpammer\obj\Debug\net7.0-windows\ref\Mail Spammer.dll

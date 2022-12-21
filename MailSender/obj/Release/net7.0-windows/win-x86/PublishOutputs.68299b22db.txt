@@ -1,0 +1,7 @@
+D:\Work\Programming\C#\Learning\WPF\Mail Spammer\Release\Mail Sender.pdb
+D:\Work\Programming\C#\Learning\WPF\Mail Spammer\Release\D3DCompiler_47_cor3.dll
+D:\Work\Programming\C#\Learning\WPF\Mail Spammer\Release\PenImc_cor3.dll
+D:\Work\Programming\C#\Learning\WPF\Mail Spammer\Release\PresentationNative_cor3.dll
+D:\Work\Programming\C#\Learning\WPF\Mail Spammer\Release\vcruntime140_cor3.dll
+D:\Work\Programming\C#\Learning\WPF\Mail Spammer\Release\wpfgfx_cor3.dll
+D:\Work\Programming\C#\Learning\WPF\Mail Spammer\Release\Mail Sender.exe

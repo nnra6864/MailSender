@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "6MDIK4xe9rIiPckG3mALQmVE1NS4tm70c/d482Aw6A7wilkOThhgyziWCcOY799t9z0IsM+tfRa+oz3TrkGA8Q==",
+  "success": true,
+  "projectFilePath": "D:\\Work\\Programming\\C#\\Learning\\WPF\\Mail Spammer\\Project\\MailSpammer\\MailSender.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\matej\\.nuget\\packages\\materialdesigncolors\\2.0.9\\materialdesigncolors.2.0.9.nupkg.sha512",
+    "C:\\Users\\matej\\.nuget\\packages\\materialdesignthemes\\4.6.1\\materialdesignthemes.4.6.1.nupkg.sha512",
+    "C:\\Users\\matej\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\7.0.1\\microsoft.netcore.app.runtime.win-x86.7.0.1.nupkg.sha512",
+    "C:\\Users\\matej\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x86\\7.0.1\\microsoft.windowsdesktop.app.runtime.win-x86.7.0.1.nupkg.sha512",
+    "C:\\Users\\matej\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x86\\7.0.1\\microsoft.aspnetcore.app.runtime.win-x86.7.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

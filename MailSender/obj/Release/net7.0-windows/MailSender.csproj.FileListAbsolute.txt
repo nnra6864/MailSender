@@ -1,0 +1,25 @@
+D:\Work\Programming\C#\Learning\WPF\Mail Spammer\Project\MailSpammer\bin\Release\net7.0-windows\Mail Sender.exe
+D:\Work\Programming\C#\Learning\WPF\Mail Spammer\Project\MailSpammer\bin\Release\net7.0-windows\Mail Sender.deps.json
+D:\Work\Programming\C#\Learning\WPF\Mail Spammer\Project\MailSpammer\bin\Release\net7.0-windows\Mail Sender.runtimeconfig.json
+D:\Work\Programming\C#\Learning\WPF\Mail Spammer\Project\MailSpammer\bin\Release\net7.0-windows\Mail Sender.dll
+D:\Work\Programming\C#\Learning\WPF\Mail Spammer\Project\MailSpammer\bin\Release\net7.0-windows\Mail Sender.pdb
+D:\Work\Programming\C#\Learning\WPF\Mail Spammer\Project\MailSpammer\bin\Release\net7.0-windows\MaterialDesignColors.dll
+D:\Work\Programming\C#\Learning\WPF\Mail Spammer\Project\MailSpammer\bin\Release\net7.0-windows\MaterialDesignThemes.Wpf.dll
+D:\Work\Programming\C#\Learning\WPF\Mail Spammer\Project\MailSpammer\obj\Release\net7.0-windows\MailSender.csproj.AssemblyReference.cache
+D:\Work\Programming\C#\Learning\WPF\Mail Spammer\Project\MailSpammer\obj\Release\net7.0-windows\MainWindow.g.cs
+D:\Work\Programming\C#\Learning\WPF\Mail Spammer\Project\MailSpammer\obj\Release\net7.0-windows\App.g.cs
+D:\Work\Programming\C#\Learning\WPF\Mail Spammer\Project\MailSpammer\obj\Release\net7.0-windows\Mail Sender_Content.g.cs
+D:\Work\Programming\C#\Learning\WPF\Mail Spammer\Project\MailSpammer\obj\Release\net7.0-windows\Mail Sender_MarkupCompile.cache
+D:\Work\Programming\C#\Learning\WPF\Mail Spammer\Project\MailSpammer\obj\Release\net7.0-windows\Mail Sender_MarkupCompile.lref
+D:\Work\Programming\C#\Learning\WPF\Mail Spammer\Project\MailSpammer\obj\Release\net7.0-windows\MainWindow.baml
+D:\Work\Programming\C#\Learning\WPF\Mail Spammer\Project\MailSpammer\obj\Release\net7.0-windows\Mail Sender.g.resources
+D:\Work\Programming\C#\Learning\WPF\Mail Spammer\Project\MailSpammer\obj\Release\net7.0-windows\MailSender.GeneratedMSBuildEditorConfig.editorconfig
+D:\Work\Programming\C#\Learning\WPF\Mail Spammer\Project\MailSpammer\obj\Release\net7.0-windows\MailSender.AssemblyInfoInputs.cache
+D:\Work\Programming\C#\Learning\WPF\Mail Spammer\Project\MailSpammer\obj\Release\net7.0-windows\MailSender.AssemblyInfo.cs
+D:\Work\Programming\C#\Learning\WPF\Mail Spammer\Project\MailSpammer\obj\Release\net7.0-windows\MailSender.csproj.CoreCompileInputs.cache
+D:\Work\Programming\C#\Learning\WPF\Mail Spammer\Project\MailSpammer\obj\Release\net7.0-windows\MailSender.csproj.CopyComplete
+D:\Work\Programming\C#\Learning\WPF\Mail Spammer\Project\MailSpammer\obj\Release\net7.0-windows\Mail Sender.dll
+D:\Work\Programming\C#\Learning\WPF\Mail Spammer\Project\MailSpammer\obj\Release\net7.0-windows\refint\Mail Sender.dll
+D:\Work\Programming\C#\Learning\WPF\Mail Spammer\Project\MailSpammer\obj\Release\net7.0-windows\Mail Sender.pdb
+D:\Work\Programming\C#\Learning\WPF\Mail Spammer\Project\MailSpammer\obj\Release\net7.0-windows\MailSender.genruntimeconfig.cache
+D:\Work\Programming\C#\Learning\WPF\Mail Spammer\Project\MailSpammer\obj\Release\net7.0-windows\ref\Mail Sender.dll
