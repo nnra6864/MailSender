@@ -5,7 +5,6 @@ Google Account -> Security -> 2 Step Verification
 and then adding a new App Password(below 2SV)
 
 You can select a text file with all the Senders by clicking the Select Senders button.
-
 Senders text file should be written in a following format:
 
 mail1@gmail.com password
